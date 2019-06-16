@@ -22,12 +22,4 @@ class PendingData extends Controller{
         $oQuery = DB::select($query);        
         return $oQuery;
     }
-
-    public static function login(){                
-        $query = "SELECT idgtd_tipo_documento, tdo_nombre
-                    FROM gtd_tipo_documento
-                    ORDER BY tdo_nombre ";
-        $oQuery = DB::select($query);        
-        return $oQuery;
-    }
 }

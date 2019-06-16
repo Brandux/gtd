@@ -24,13 +24,13 @@ class PendingController extends Controller {
             $data = PendingData::listTipoDocumento();                
             $jResponse['success'] = true;
             if(count($data)>0){
-                $jResponse['message'] = "Succes";                    
+                $jResponse['message'] = "Correcto";
                 $jResponse['data'] = $data;
                 $code = "200";
             }else{
                 $jResponse['message'] = "The item does not exist";                        
                 $jResponse['data'] = [];
-                $code = "202";
+                $code = "200";
             }
         }catch(Exception $e){
             $jResponse['success'] = false;

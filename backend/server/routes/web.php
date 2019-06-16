@@ -26,5 +26,4 @@ Route::get('/conceptos', 'TramiteController@index');
 
 Route::group(['prefix' => 'monitoring', 'namespace' => 'Monitoring'], function () {
     Route::get('data', 'PendingController@C_listTipoDocumento');
-    // Route::get('login', 'PendingController@login');
 });
