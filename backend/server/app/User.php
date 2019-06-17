@@ -10,13 +10,17 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    protected $table="GDT_USUARIO";
+    protected $primaryKey="IDGTD_PERSONA";
+    public $timestamps=false;
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'USU_USUARIO','USU_PASSWORD','REMEMBER_TOKEN','CREATED_AT','UPDATED_AT','ESTADO',
     ];
 
     /**
